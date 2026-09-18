@@ -1,0 +1,4 @@
+<resources>
+    <!-- Dark counterpart of values/themes.xml so the window background matches before Compose draws. -->
+    <style name="Theme.StreakWall" parent="android:Theme.Material.NoActionBar" />
+</resources>
