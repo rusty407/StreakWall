@@ -38,7 +38,7 @@
 
     <!-- Privacy policy placeholder -->
     <string name="privacy_title">Privacy Policy</string>
-    <string name="privacy_body">StreakWall stores everything you enter — your goal name, start date, and theme — only on this device, using Android\'s local app storage. Nothing is transmitted anywhere: there is no account, no analytics, no ad network, and no server this app talks to.\n\nThe only system permission this app uses is the ability to set your wallpaper, which it uses solely to draw your day count on your home and lock screens.\n\nUninstalling the app deletes all of its data from your device.\n\nThis screen is a placeholder describing the app’s actual behavior. Before publishing to the Play Store, replace it with a link to a hosted privacy policy page, as Play Console requires a URL, not just in-app text.</string>
+    <string name="privacy_body">StreakWall stores everything you enter — your goal name, start date, and theme — only on this device, using Android\'s local app storage. Nothing is transmitted anywhere: there is no account, no analytics, no ad network, and no server this app talks to.\n\nThe app can set your wallpaper (to draw your day count on your home and lock screens) and run after a restart (to keep the daily update going). It also holds the standard background-scheduling permissions Android\'s WorkManager library adds. It does not request internet access.\n\nUninstalling the app deletes all of its data from your device.\n\nThis screen is a placeholder describing the app’s actual behavior. Before publishing to the Play Store, replace it with a link to a hosted privacy policy page, as Play Console requires a URL, not just in-app text.</string>
 
     <!-- Milestones -->
     <string name="milestone_week">1 week</string>

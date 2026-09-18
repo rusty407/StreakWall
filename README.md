@@ -66,7 +66,7 @@ app/src/main/java/com/console/streakwall/
 
 ## Privacy
 
-StreakWall stores your goal name, start date and theme only in the app's private storage on your device. It requests two permissions: `SET_WALLPAPER` to draw your day count, and `RECEIVE_BOOT_COMPLETED` to resume the daily update after a restart. Uninstalling removes all of its data.
+StreakWall stores your goal name, start date and theme only in the app's private storage on your device, and it does not request the `INTERNET` permission. It uses `SET_WALLPAPER` to draw your day count and `RECEIVE_BOOT_COMPLETED` to resume the daily update after a restart. The WorkManager scheduling library also adds `WAKE_LOCK`, `ACCESS_NETWORK_STATE` and `FOREGROUND_SERVICE`. Uninstalling removes all of its data.
 
 ## License
 
