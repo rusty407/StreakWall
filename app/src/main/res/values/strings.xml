@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">StreakWall</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title">What are you tracking?</string>
+    <string name="onboarding_subtitle">Name the habit or goal you want to hold yourself accountable to. This shows up on your wallpaper every day.</string>
+    <string name="onboarding_habit_label">Goal name</string>
+    <string name="onboarding_habit_placeholder">e.g. No smoking, No sugar, Daily workout</string>
+    <string name="onboarding_start_date_label">Start date</string>
+    <string name="onboarding_theme_label">Wallpaper theme</string>
+    <string name="onboarding_cta">Start my streak</string>
+    <string name="onboarding_habit_error">Give your goal a name to continue.</string>
+
+    <!-- Home -->
+    <string name="home_day_label">DAY</string>
+    <string name="home_started_on">Started %1$s</string>
+    <string name="home_refresh_wallpaper">Refresh Wallpaper Now</string>
+    <string name="home_reset_streak">Reset Streak</string>
+    <string name="home_settings_cd">Settings</string>
+    <string name="home_wallpaper_updated">Wallpaper updated</string>
+    <string name="home_wallpaper_failed">Couldn\'t update wallpaper: %1$s</string>
+
+    <!-- Reset confirmation -->
+    <string name="reset_dialog_title">Reset your streak?</string>
+    <string name="reset_dialog_body">This sets Day 1 back to today. Your current streak of %1$d day(s) on “%2$s” will be lost. This can\'t be undone.</string>
+    <string name="reset_dialog_confirm">Reset</string>
+    <string name="reset_dialog_cancel">Cancel</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_habit_label">Goal name</string>
+    <string name="settings_theme_label">Wallpaper theme</string>
+    <string name="settings_save">Save changes</string>
+    <string name="settings_saved">Saved</string>
+    <string name="settings_reapply_wallpaper">Re-apply wallpaper</string>
+    <string name="settings_privacy_policy">Privacy policy</string>
+    <string name="settings_back_cd">Back</string>
+
+    <!-- Privacy policy placeholder -->
+    <string name="privacy_title">Privacy Policy</string>
+    <string name="privacy_body">StreakWall stores everything you enter — your goal name, start date, and theme — only on this device, using Android\'s local app storage. Nothing is transmitted anywhere: there is no account, no analytics, no ad network, and no server this app talks to.\n\nThe only system permission this app uses is the ability to set your wallpaper, which it uses solely to draw your day count on your home and lock screens.\n\nUninstalling the app deletes all of its data from your device.\n\nThis screen is a placeholder describing the app’s actual behavior. Before publishing to the Play Store, replace it with a link to a hosted privacy policy page, as Play Console requires a URL, not just in-app text.</string>
+
+    <!-- Milestones -->
+    <string name="milestone_week">1 week</string>
+    <string name="milestone_month">1 month</string>
+    <string name="milestone_quarter">90 days</string>
+    <string name="milestone_year">1 year</string>
+</resources>

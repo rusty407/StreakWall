@@ -1,0 +1,6 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. Compose owns all real theming (see ui/theme/Theme.kt) —
+         this XML theme only needs to exist for the manifest / window background before
+         the first Compose frame draws, and for the app icon system windows. -->
+    <style name="Theme.StreakWall" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>

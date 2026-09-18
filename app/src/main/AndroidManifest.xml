@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Required to change the home/lock screen wallpaper. -->
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <!-- Lets WorkManager's own rescheduling machinery, and our explicit receiver below,
+         run again after the device reboots. -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".StreakWallApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StreakWall">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.StreakWall">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--
+            Reschedules the daily wallpaper-update work after a reboot.
+
+            WorkManager persists pending jobs in its own database and normally re-arms itself
+            on boot via an internal receiver, so this is defense-in-depth rather than strictly
+            required: some OEM battery-optimization skins are known to clear or delay that
+            internal rescheduling, especially after a force-stop.
+            If the device was off across midnight, the pending job's delay has already elapsed,
+            so WorkManager runs it soon after boot and the day count catches up.
+            KEEP (see WallpaperScheduler) makes this a no-op if a midnight job is already
+            pending, so re-registering here is always safe.
+        -->
+        <receiver
+            android:name=".boot.BootCompletedReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

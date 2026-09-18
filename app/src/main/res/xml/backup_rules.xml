@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Backs up the DataStore preferences file so a user's goal name, start date, and theme
+   survive a device migration/restore via Android's Auto Backup. There is no other
+   user data in this app to include or exclude.
+-->
+<full-backup-content>
+    <include domain="file" path="datastore/streakwall_preferences.preferences_pb" />
+</full-backup-content>

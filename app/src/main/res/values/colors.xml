@@ -1,0 +1,6 @@
+<resources>
+    <!-- Used only by the launcher icon (adaptive icon background) and the pre-Compose
+         XML theme's window background. All in-app theming lives in ui/theme/Color.kt. -->
+    <color name="ic_launcher_background">#1B1B2F</color>
+    <color name="ic_launcher_foreground_accent">#4ADE80</color>
+</resources>

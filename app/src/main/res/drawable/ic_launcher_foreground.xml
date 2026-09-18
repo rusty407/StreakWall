@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Placeholder mark: a simple flame silhouette, standing in for "streak". Swap this
+     (and ic_launcher_background) for real brand artwork before a Play Store release. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="@color/ic_launcher_foreground_accent"
+        android:pathData="M54,20
+            C40,40 30,55 30,68
+            C30,82 41,92 54,92
+            C67,92 78,82 78,68
+            C78,57 70,45 60,35
+            C63,45 58,50 54,50
+            C48,50 44,45 46,38
+            C47,34 50,28 54,20
+            Z" />
+</vector>
