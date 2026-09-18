@@ -6,6 +6,15 @@ A habit and streak tracker that puts your progress on your wallpaper. Name the g
   <img src="docs/screenshots.png" alt="StreakWall onboarding, home and settings screens" width="800">
 </p>
 
+## Install
+
+1. On your Android phone, open the [latest release](https://github.com/rusty407/StreakWall/releases/latest) and download the `.apk` file.
+2. Open the downloaded file. Android will ask you to allow installs from that source (your browser or Files app). Turn on **Allow from this source**, go back, and tap **Install**.
+3. If Play Protect says the app is unrecognized, choose **Install anyway**. This warning appears because the app isn't distributed through the Play Store.
+4. Open StreakWall and follow the setup.
+
+Requires Android 8.0 or newer. To update, download the newer APK and install it over the old one; your data is kept. Apps installed this way don't update automatically. Each release lists the file's SHA-256 checksum if you want to verify your download.
+
 ## Features
 
 - **Any habit.** You name your own goal during onboarding; nothing is hardcoded.
