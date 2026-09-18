@@ -3,7 +3,7 @@
 A habit and streak tracker that puts your progress on your wallpaper. Name the goal you're working on (quitting smoking, cutting sugar, a daily workout), pick a start date, and StreakWall redraws your home and lock screen wallpaper every midnight to show **Day N**, so the streak is the first thing you see each time you pick up your phone.
 
 <p align="center">
-  <img src="docs/screenshot-home.png" alt="StreakWall home screen showing Day 1" width="300">
+  <img src="docs/screenshots.png" alt="StreakWall onboarding, home and settings screens" width="800">
 </p>
 
 ## Features
@@ -67,3 +67,7 @@ app/src/main/java/com/console/streakwall/
 ## Privacy
 
 StreakWall stores your goal name, start date and theme only in the app's private storage on your device. It requests two permissions: `SET_WALLPAPER` to draw your day count, and `RECEIVE_BOOT_COMPLETED` to resume the daily update after a restart. Uninstalling removes all of its data.
+
+## License
+
+Released under the [MIT License](LICENSE).
